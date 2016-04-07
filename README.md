@@ -61,7 +61,46 @@ $('<img/>').attr('src': 'path/to/img').appendTo('#some-place')
 
 ## Supported tags
 
-    div, span, main, footer, img, br, hr, h1, h2, h3, h4, h5, h6, small, big, strong
+    div
+    span
+    p
+    h1
+    h2
+    h3
+    h4
+    h5
+    h6
+    form
+    input
+    label
+    textarea
+    select
+    option
+    hr
+    br
+    ul
+    ol
+    li
+    small
+    big
+    strong
+    i
+    b
+    s
+    address
+    table
+    tr
+    th
+    td
+    dl
+    dt
+    dd
+    main
+    header
+    nav
+    aside
+    article
+    footer
 
 ## Generic API
 
@@ -69,6 +108,23 @@ $('<img/>').attr('src': 'path/to/img').appendTo('#some-place')
 import domGen from 'dom-gen'
 
 const xTag = domGen('x-tag') // This works as the same as other tag generators
+```
+
+# Recipes
+
+## Complex construction
+
+```js
+div().append(
+  h2().text('Hello'),
+  div().addClass('greeting').append(
+    p().append(
+      'Hello, this is ',
+      span().addClass('green').text('example'),
+      'page!'
+    )
+  )
+)
 ```
 
 # License
