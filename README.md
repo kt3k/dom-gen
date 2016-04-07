@@ -4,7 +4,7 @@
 
 # Idea
 
-This tool is basically the shorthand of `$('<tagName/>', opts)`. You can write the above like `tagName(opts)` with this tool.
+This tool is a shorthand of `$('<tagName/>', opts)`. You can write it like `tagName(opts)` with this tool.
 
 # Install
 
