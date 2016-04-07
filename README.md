@@ -117,16 +117,29 @@ const xTag = domGen('x-tag') // This works as the same as other tag generators
 ## Complex construction
 
 ```js
+import {div, h2, p, span} from 'dom-gen'
+
 div().append(
   h2().text('Hello'),
   div().addClass('greeting').append(
     p().append(
-      'Hello, this is ',
-      span().addClass('green').text('example'),
-      'page!'
+      'Hello, this is ', span().addClass('green').text('example'), 'page!'
     )
   )
 )
+```
+
+is equal to the html:
+
+```html
+<div>
+  <h2>Hello</h2>
+  <div class="greeting">
+    <p>
+      Hello, this is <span class="green">example</span> page!
+    </p>
+  </div>
+</div>
 ```
 
 # License
