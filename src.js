@@ -38,6 +38,8 @@ export const i = domGen('i')
 export const b = domGen('b')
 export const s = domGen('s')
 export const address = domGen('address')
+export const sub = domGen('sub')
+export const sup = domGen('sup')
 
 export const table = domGen('table')
 export const tr = domGen('tr')

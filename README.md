@@ -88,6 +88,8 @@ $('<img/>').attr('src': 'path/to/img').appendTo('#some-place')
     b
     s
     address
+    sub
+    sup
     table
     tr
     th
