@@ -1,6 +1,6 @@
 {
   "name": "dom-gen",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Utility for dom generation, a jquery plugin",
   "main": "dist.js",
   "scripts": {

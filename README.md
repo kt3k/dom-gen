@@ -1,4 +1,4 @@
-# dom-gen v1.2.0
+# dom-gen v1.2.1
 
 > Utility for dom generation, a jquery plugin
 
