@@ -2,6 +2,10 @@
 
 > Utility for dom generation, a jquery plugin
 
+# Idea
+
+This tool is basically the shorthand of `$('<tagName/>', opts)`. You can write the above like `tagName(opts)` with this tool.
+
 # Install
 
     npm install dom-gen
