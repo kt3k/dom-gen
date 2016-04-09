@@ -12,12 +12,14 @@ This tool is a shorthand of `$('<tagName/>', opts)`. You can write it like `tagN
 
 # Usage
 
+**NOTE** dom-gen supposes $ is exposed in global namespace. You need to put jquery on global namespace first.
+
 ## div()
 
 ```js
 import {div} from 'dom-gen'
 
-div() // This creates an empty div element
+div() // This creates an empty div element.
 ```
 
 The above calls is the same as `$('<div/>')`. You can chain jquery method calls like the following
@@ -58,76 +60,134 @@ is the same as:
 $('<img/>').attr('src': 'path/to/img').appendTo('#some-place')
 ```
 
+## div(opts, param0, [param1, ...])
+
+You can pass additional params to `div` function and they are `$.fn.append`ed to the element.
+
+```js
+div({addClass: 'main'}, div({addClass: 'container'}, 'Hello'))
+```
+
+is the same as the follwoing jquery call:
+
+```js
+$('<div/>', {addClass: 'main'}).append($('<div/>', {addClass: 'container'}).append('Hello')
+```
+which is equivalent of the following html:
+
+```js
+<div class="main"><div class="container">Hello</div></div>
+```
+
+You can even omit first param `opts` if it's empty.
+
+```js
+div(p(span('Hello'), ' ', span('world!'))
+```
+
+is equal to:
+
+```
+<div><p><span>Hello</span> <span>world!</span></p></div>
+```
+
 
 ## Supported tags
 
-    div
-    span
-    p
-    h1
-    h2
-    h3
-    h4
-    h5
-    h6
-    form
-    input
-    label
-    textarea
-    select
-    option
-    hr
-    br
-    ul
-    ol
-    li
-    small
-    big
-    strong
-    i
-    b
-    s
-    address
-    sub
-    sup
-    table
-    tr
-    th
-    td
-    dl
-    dt
-    dd
-    main
-    header
-    nav
-    aside
-    article
-    footer
+`dom-gen` exports following tags by default for now. You can import them directly from `dom-gen` and use them as generator functions.
 
-## Generic API
+```js
+div()
+span()
+p()
+h1()
+h2()
+h3()
+h4()
+h5()
+h6()
+form()
+input()
+label()
+textarea()
+select()
+option()
+hr()
+br()
+ul()
+ol()
+li()
+small()
+big()
+strong()
+i()
+b()
+s()
+address()
+sub()
+sup()
+table()
+tr()
+th()
+td()
+dl()
+dt()
+dd()
+main()
+header()
+nav()
+aside()
+article()
+footer()
+```
+
+## Create your own
+
+You can create the generator for your own tag.
 
 ```js
 import domGen from 'dom-gen'
 
-const xTag = domGen('x-tag') // This works as the same as other tag generators
+const xTag = domGen('x-tag')
+
+xTag({addClass: 'foo'}, p('Hello')) // This is equivalent of <x-tag class="foo"><p>Hello</p></x-tag>
 ```
 
 # Recipes
+
+## Mix inline html and dom-gen composition
+
+Inline elements are often better not to use dom-gen for creating.
+
+```js
+p('Hello, this is <span class="green">example</span> page!')
+```
+
+is a bit better readable than:
+
+```
+p(
+  'Hello, this is ',
+  span({addClass: 'green'}, 'example'),
+  'page!'
+)
+```
 
 ## Complex construction
 
 ```js
 import {div, h2, p} from 'dom-gen'
 
-div().append(
-  h2().text('Hello'),
-  div().addClass('greeting').append(
-    p().append('Hello, this is <span class="green">example</span> page!')
-  )
+div(
+  h2('Hello'),
+  div({addClass: 'greeting'},
+    p('Hello, this is <span class="green">example</span> page!')
+  ),
+  hr()
 )
 ```
 
-is equal to the html:
+is equivalent of the following html:
 
 ```html
 <div>
@@ -135,6 +195,7 @@ is equal to the html:
   <div class="greeting">
     <p>Hello, this is <span class="green">example</span> page!</p>
   </div>
+  <hr/>
 </div>
 ```
 
