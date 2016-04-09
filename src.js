@@ -27,7 +27,7 @@ export default function domGen(tagName) {
  * @return {boolean}
  */
 function seemLikePlainObject(o) {
-  return Object.getPrototypeOf(o).hasOwnProperty('isPrototypeOf')
+  return o instanceof Object && Object.getPrototypeOf(o).hasOwnProperty('isPrototypeOf')
 }
 
 export const div = domGen('div')
