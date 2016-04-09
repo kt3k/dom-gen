@@ -3,8 +3,15 @@ module.exports = function(config) {
     frameworks: ['mocha', 'browserify'],
     files: ['spec.js'],
     preprocessors: {'spec.js': ['browserify']},
-    browserify: {debug: true, transform: ['babelify']},
-    reporters: ['progress'],
+    browserify: {debug: true, transform: [
+      require('browserify-istanbul')({
+        instrumenter: require('isparta'),
+        ignore: ['**/spec*.js']
+      }),
+      'babelify'
+    ]},
+    reporters: ['progress', 'coverage'],
+    coverageReporter: {type: 'lcov'},
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

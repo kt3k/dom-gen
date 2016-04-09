@@ -49,3 +49,18 @@ describe('div(opts, param0, [param1, ...])', () => {
   })
 
 })
+
+describe('domGen("x-tag")(opts, params, ...)', () => {
+
+  it('creates the dom of custom tags', () => {
+
+    const xTag = domGen('x-tag')
+
+    const elem = xTag({addClass: 'foo'}, 'bar', div('baz'))
+
+    expect(elem).to.be.instanceof($)
+    expect(elem[0].tagName).to.equal('X-TAG')
+
+  })
+
+})

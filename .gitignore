@@ -4,3 +4,6 @@
 
 # dist
 dist.js
+
+# cov
+/coverage
