@@ -205,16 +205,16 @@ MIT
 
 # Similar projects
 
-- JavaScript
-  - [hyperscript][hyperscript] JavaScript
-  - [jm][jm] JavaScript
-- CoffeeScript
-  - [funcd][funcd] CoffeeScript
-  - [space-pen][space-pen] CoffeeScript (Not maintained)
 - Ruby
   - [Markaby][Markaby] Ruby
   - [Builder][Builder] Ruby
   - [Nokogiri HTML Builder][Nokogiri HTML Builder] Ruby
+- JavaScript
+  - [jm][jm] JavaScript
+  - [hyperscript][hyperscript] JavaScript
+- CoffeeScript
+  - [space-pen][space-pen] CoffeeScript (Not maintained)
+  - [funcd][funcd] CoffeeScript
 
 [space-pen]: https://github.com/atom-archive/space-pen
 [hyperscript]: https://github.com/dominictarr/hyperscript
