@@ -207,6 +207,7 @@ MIT
 
 - Ruby
   - [Markaby][Markaby] Ruby
+  - [erector][erector] Ruby
   - [Builder][Builder] Ruby
   - [Nokogiri HTML Builder][Nokogiri HTML Builder] Ruby
 - JavaScript
@@ -223,3 +224,4 @@ MIT
 [Markaby]: https://github.com/markaby/markaby
 [Builder]: https://github.com/jimweirich/builder
 [Nokogiri HTML Builder]: http://www.rubydoc.info/github/sparklemotion/nokogiri/Nokogiri/HTML/Builder
+[erector]: https://github.com/erector/erector
