@@ -202,3 +202,24 @@ is equivalent of the following html:
 # License
 
 MIT
+
+# Similar projects
+
+- JavaScript
+  - [hyperscript][hyperscript] JavaScript
+  - [jm][jm] JavaScript
+- CoffeeScript
+  - [funcd][funcd] CoffeeScript
+  - [space-pen][space-pen] CoffeeScript (Not maintained)
+- Ruby
+  - [Markaby][Markaby] Ruby
+  - [Builder][Builder] Ruby
+  - [Nokogiri HTML Builder][Nokogiri HTML Builder] Ruby
+
+[space-pen]: https://github.com/atom-archive/space-pen
+[hyperscript]: https://github.com/dominictarr/hyperscript
+[funcd]: https://github.com/mgutz/funcd
+[jm]: https://github.com/smtlaissezfaire/jm
+[Markaby]: https://github.com/markaby/markaby
+[Builder]: https://github.com/jimweirich/builder
+[Nokogiri HTML Builder]: http://www.rubydoc.info/github/sparklemotion/nokogiri/Nokogiri/HTML/Builder

@@ -4,7 +4,7 @@
   "description": "Utility for dom generation, a jquery plugin",
   "main": "dist.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "karma start karma.conf.js",
     "dist": "babel src.js > dist.js",
     "tags": "awk '/^export const [a-z0-9]+ = domGen/{print $3\"()\"}' < src.js",
     "prepublish": "npm run dist"
