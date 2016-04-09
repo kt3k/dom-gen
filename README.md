@@ -57,7 +57,7 @@ img({ attr: { src: 'path/to/img' }, appendTo: '#some-place' })
 is the same as:
 
 ```js
-$('<img/>').attr('src': 'path/to/img').appendTo('#some-place')
+$('<img/>').attr('src', 'path/to/img').appendTo('#some-place')
 ```
 
 ## div(opts, param0, [param1, ...])
