@@ -65,18 +65,18 @@ $('<img/>').attr('src', 'path/to/img').appendTo('#some-place')
 You can pass additional params to `div` function and they are `$.fn.append`ed to the element.
 
 ```js
-div({addClass: 'main'}, div({addClass: 'container'}, 'Hello'))
+div({addClass: 'main'}, div().text('Hello'), 'world!')
 ```
 
 is the same as the follwoing jquery call:
 
 ```js
-$('<div/>', {addClass: 'main'}).append($('<div/>', {addClass: 'container'}).append('Hello')
+$('<div/>', {addClass: 'main'}).append($('<div/>').text('Hello'), 'world!')
 ```
 which is equivalent of the following html:
 
 ```js
-<div class="main"><div class="container">Hello</div></div>
+<div class="main"><div>Hello</div>world!</div>
 ```
 
 You can even omit first param `opts` if it's empty.
