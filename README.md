@@ -82,7 +82,7 @@ which is equivalent of the following html:
 You can even omit first param `opts` if it's empty.
 
 ```js
-div(p(span('Hello'), ' ', span('world!'))
+div(p(span('Hello'), ' ', span('world!')))
 ```
 
 is equal to:
