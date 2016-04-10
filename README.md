@@ -62,7 +62,7 @@ $('<img/>').attr('src', 'path/to/img').appendTo('#some-place')
 
 ## div(opts, param0, [param1, ...])
 
-You can pass additional params to `div` function and they are `$.fn.append`ed to the element.
+You can pass additional params to `div` function and they are `append`ed to the element.
 
 ```js
 div({addClass: 'main'}, div().text('Hello'), 'world!')
