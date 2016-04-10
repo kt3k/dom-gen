@@ -17,7 +17,7 @@ export default function domGen(tagName) {
       opts = undefined
     }
 
-    return $('<' + tagName + '/>', opts).append(args)
+    return $('<' + tagName + '/>', opts).append(...[].concat(...args))
   }
 }
 

@@ -42,9 +42,13 @@ describe('div(opts, param0, [param1, ...])', () => {
 
   it('can omits first param', () => {
 
-    const elem = div('foo', div('bar'), 'baz')
+    let elem = div('foo', div('bar'), 'baz')
 
     expect(elem.html()).to.equal('foo<div>bar</div>baz')
+
+    elem = div('foo', [div('bar'), div('baz')])
+
+    expect(elem.html()).to.equal('foo<div>bar</div><div>baz</div>')
 
   })
 
