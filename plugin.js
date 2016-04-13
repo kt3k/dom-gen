@@ -1,0 +1,1 @@
+$.domgen = require('./src')

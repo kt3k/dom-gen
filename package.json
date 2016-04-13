@@ -6,6 +6,7 @@
   "scripts": {
     "test": "karma start karma.conf.js",
     "dist": "babel src.js > dist.js",
+    "plugin": "browserify -t babelify plugin.js > jquery-domgen.js",
     "tags": "awk '/^export const [a-z0-9]+ = domGen/{print $3\"()\"}' < src.js",
     "codecov": "cat coverage/*/lcov.info | codecov",
     "prepublish": "npm run dist"
