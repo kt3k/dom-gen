@@ -4,7 +4,9 @@
 
 # Idea
 
-This tool is a shorthand of `$('<tagName/>', opts)`. You can write it like `tagName(opts)` with this tool.
+This tool is a shorthand of `$('<tagName/>', opts)`. You can write it like `tagName(opts)` with this tool such as `div({data: {key: 'value'}})` for example.
+
+See the slide ["Things You Might Not Know About jQuery"](http://ejohn.org/apps/workshop/adv-talk/) by John Resig. This slide explains how `$('<tagName/>', opts)` works in details.
 
 # Install
 
@@ -22,7 +24,7 @@ import {div} from 'dom-gen'
 div() // This creates an empty div element.
 ```
 
-The above calls is the same as `$('<div/>')`. You can chain jquery method calls like the following
+The above code is the same as `$('<div/>')`. You can chain jquery method calls like the following
 
 ```js
 div().text('Hello').appendTo('#main')
@@ -41,6 +43,8 @@ The above is the same as:
 ```js
 $('<div/>', { data: { x: 0, y: 1 }, addClass: 'container', appendTo: '#main' })
 ```
+
+(See the slide ["Things You Might Not Know About jQuery"](http://ejohn.org/apps/workshop/adv-talk/) which explains what the above code means in jQuery.)
 
 or:
 
