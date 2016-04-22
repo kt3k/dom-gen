@@ -1,4 +1,4 @@
-# dom-gen v2.0.2 [![Circle CI](https://circleci.com/gh/kt3k/dom-gen.svg?style=svg)](https://circleci.com/gh/kt3k/dom-gen) [![codecov.io](https://codecov.io/github/kt3k/dom-gen/coverage.svg?branch=master)](https://codecov.io/github/kt3k/dom-gen?branch=master)
+# dom-gen v2.1.0 [![Circle CI](https://circleci.com/gh/kt3k/dom-gen.svg?style=svg)](https://circleci.com/gh/kt3k/dom-gen) [![codecov.io](https://codecov.io/github/kt3k/dom-gen/coverage.svg?branch=master)](https://codecov.io/github/kt3k/dom-gen?branch=master)
 
 > Utility for dom generation, a jquery plugin
 
