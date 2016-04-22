@@ -103,6 +103,7 @@ is equal to:
 ```js
 div()
 span()
+img()
 p()
 h1()
 h2()

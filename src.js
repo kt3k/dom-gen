@@ -32,6 +32,7 @@ function seemLikePlainObject(o) {
 
 export const div = domGen('div')
 export const span = domGen('span')
+export const img = domGen('img')
 export const p = domGen('p')
 
 export const h1 = domGen('h1')
