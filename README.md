@@ -204,6 +204,20 @@ is equivalent of the following html:
 </div>
 ```
 
+## Use with tagged template string
+
+```js
+import {div, h2, p} from 'dom-gen'
+
+div(
+  h2`Hello`,
+  div({addClass: 'greeting'},
+    p`Hello, this is <span class="green">example</span> page!`
+  ),
+  hr()
+)
+```
+
 # License
 
 MIT
