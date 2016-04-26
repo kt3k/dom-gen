@@ -1,7 +1,9 @@
 import domGen, {div} from './src'
-import './spec-helper'
+import $ from 'jquery'
 
 import {expect} from 'chai'
+
+global.$ = $
 
 describe('div()', () => {
 
