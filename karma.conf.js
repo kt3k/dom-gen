@@ -9,7 +9,7 @@ module.exports = function(config) {
         ignore: ['**/spec*.js']
       }),
       'babelify'
-    ]},
+    ], noParse: ['jquery']},
     reporters: ['progress', 'coverage'],
     coverageReporter: {type: 'lcov'},
     port: 9876,
