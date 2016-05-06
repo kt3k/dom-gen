@@ -307,6 +307,8 @@ MIT
   - [jm][jm] JavaScript
   - [hyperscript][hyperscript] JavaScript
   - [transform-react-jsx][transform-react-jsx] JavaScript
+  - [Elem][Elem] JavaScript
+  - [frzr][frzr] JavaScript
 - CoffeeScript
   - [space-pen][space-pen] CoffeeScript (Not maintained)
   - [funcd][funcd] CoffeeScript
@@ -320,3 +322,5 @@ MIT
 [Nokogiri HTML Builder]: http://www.rubydoc.info/github/sparklemotion/nokogiri/Nokogiri/HTML/Builder
 [erector]: https://github.com/erector/erector
 [transform-react-jsx]: https://babeljs.io/docs/plugins/transform-react-jsx/
+[Elem]: https://github.com/mathieuancelin/Elem
+[frzr]: https://frzr.js.org/
