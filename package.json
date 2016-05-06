@@ -5,7 +5,7 @@
   "main": "dist.js",
   "scripts": {
     "test": "karma start karma.conf.js",
-    "dist": "babel src.js > dist.js",
+    "dist": "browserify src.js --standalone dom-gen -t babelify > dist.js",
     "plugin": "browserify -t babelify plugin.js > jquery-domgen.js",
     "tags": "awk '/^export const [a-z0-9]+ = domGen/{print $3\"()\"}' < src.js",
     "codecov": "cat coverage/*/lcov.info | codecov",
@@ -34,6 +34,7 @@
     "browserify-istanbul": "^2.0.0",
     "chai": "^3.5.0",
     "codecov.io": "^0.1.6",
+    "html-tags": "^1.1.1",
     "isparta": "^4.0.0",
     "jquery": "^2.2.3",
     "karma": "^0.13.22",
