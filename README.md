@@ -304,6 +304,7 @@ MIT
   - [Builder][Builder] Ruby
   - [Nokogiri HTML Builder][Nokogiri HTML Builder] Ruby
 - JavaScript
+  - [@cycle/dom][@cycle/dom] JavaScript
   - [jm][jm] JavaScript
   - [hyperscript][hyperscript] JavaScript
   - [transform-react-jsx][transform-react-jsx] JavaScript
@@ -324,3 +325,4 @@ MIT
 [transform-react-jsx]: https://babeljs.io/docs/plugins/transform-react-jsx/
 [Elem]: https://github.com/mathieuancelin/Elem
 [frzr]: https://frzr.js.org/
+[@cycle/dom]: https://github.com/cyclejs/dom
