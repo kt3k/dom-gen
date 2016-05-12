@@ -305,6 +305,7 @@ MIT
   - [Nokogiri HTML Builder][Nokogiri HTML Builder] Ruby
 - JavaScript
   - [@cycle/dom][@cycle/dom] JavaScript
+  - [hyperscript-helpers][hyperscript-helpers] JavaScript
   - [jm][jm] JavaScript
   - [hyperscript][hyperscript] JavaScript
   - [transform-react-jsx][transform-react-jsx] JavaScript
@@ -326,3 +327,4 @@ MIT
 [Elem]: https://github.com/mathieuancelin/Elem
 [frzr]: https://frzr.js.org/
 [@cycle/dom]: https://github.com/cyclejs/dom
+[hyperscript-helpers]: https://github.com/ohanhi/hyperscript-helpers
