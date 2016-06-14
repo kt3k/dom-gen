@@ -6,12 +6,9 @@ $.domgen = require('./src');
 },{"./src":2}],2:[function(require,module,exports){
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = domGen;
-
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+module.exports = domGen;
 
 /**
  * Returns a generator of the doms of the given tag name.
@@ -50,56 +47,121 @@ function domGen(tagName) {
 function seemLikePlainObject(o) {
   return o instanceof Object && Object.getPrototypeOf(o).hasOwnProperty('isPrototypeOf');
 }
-
-var div = exports.div = domGen('div');
-var span = exports.span = domGen('span');
-var p = exports.p = domGen('p');
-
-var h1 = exports.h1 = domGen('h1');
-var h2 = exports.h2 = domGen('h2');
-var h3 = exports.h3 = domGen('h3');
-var h4 = exports.h4 = domGen('h4');
-var h5 = exports.h5 = domGen('h5');
-var h6 = exports.h6 = domGen('h6');
-
-var form = exports.form = domGen('form');
-var input = exports.input = domGen('input');
-var label = exports.label = domGen('label');
-var textarea = exports.textarea = domGen('textarea');
-var select = exports.select = domGen('select');
-var option = exports.option = domGen('option');
-
-var hr = exports.hr = domGen('hr');
-var br = exports.br = domGen('br');
-
-var ul = exports.ul = domGen('ul');
-var ol = exports.ol = domGen('ol');
-var li = exports.li = domGen('li');
-
-var small = exports.small = domGen('small');
-var big = exports.big = domGen('big');
-var strong = exports.strong = domGen('strong');
-var i = exports.i = domGen('i');
-var b = exports.b = domGen('b');
-var s = exports.s = domGen('s');
-var address = exports.address = domGen('address');
-var sub = exports.sub = domGen('sub');
-var sup = exports.sup = domGen('sup');
-
-var table = exports.table = domGen('table');
-var tr = exports.tr = domGen('tr');
-var th = exports.th = domGen('th');
-var td = exports.td = domGen('td');
-
-var dl = exports.dl = domGen('dl');
-var dt = exports.dt = domGen('dt');
-var dd = exports.dd = domGen('dd');
-
-var main = exports.main = domGen('main');
-var header = exports.header = domGen('header');
-var nav = exports.nav = domGen('nav');
-var aside = exports.aside = domGen('aside');
-var article = exports.article = domGen('article');
-var footer = exports.footer = domGen('footer');
+domGen.a = domGen('a');
+domGen.abbr = domGen('abbr');
+domGen.address = domGen('address');
+domGen.area = domGen('area');
+domGen.article = domGen('article');
+domGen.aside = domGen('aside');
+domGen.audio = domGen('audio');
+domGen.b = domGen('b');
+domGen.base = domGen('base');
+domGen.bdi = domGen('bdi');
+domGen.bdo = domGen('bdo');
+domGen.blockquote = domGen('blockquote');
+domGen.body = domGen('body');
+domGen.br = domGen('br');
+domGen.button = domGen('button');
+domGen.canvas = domGen('canvas');
+domGen.caption = domGen('caption');
+domGen.cite = domGen('cite');
+domGen.code = domGen('code');
+domGen.col = domGen('col');
+domGen.colgroup = domGen('colgroup');
+domGen.data = domGen('data');
+domGen.datalist = domGen('datalist');
+domGen.dd = domGen('dd');
+domGen.del = domGen('del');
+domGen.details = domGen('details');
+domGen.dfn = domGen('dfn');
+domGen.dialog = domGen('dialog');
+domGen.div = domGen('div');
+domGen.dl = domGen('dl');
+domGen.dt = domGen('dt');
+domGen.em = domGen('em');
+domGen.embed = domGen('embed');
+domGen.fieldset = domGen('fieldset');
+domGen.figcaption = domGen('figcaption');
+domGen.figure = domGen('figure');
+domGen.footer = domGen('footer');
+domGen.form = domGen('form');
+domGen.h1 = domGen('h1');
+domGen.h2 = domGen('h2');
+domGen.h3 = domGen('h3');
+domGen.h4 = domGen('h4');
+domGen.h5 = domGen('h5');
+domGen.h6 = domGen('h6');
+domGen.head = domGen('head');
+domGen.header = domGen('header');
+domGen.hr = domGen('hr');
+domGen.html = domGen('html');
+domGen.i = domGen('i');
+domGen.iframe = domGen('iframe');
+domGen.img = domGen('img');
+domGen.input = domGen('input');
+domGen.ins = domGen('ins');
+domGen.kbd = domGen('kbd');
+domGen.keygen = domGen('keygen');
+domGen.label = domGen('label');
+domGen.legend = domGen('legend');
+domGen.li = domGen('li');
+domGen.link = domGen('link');
+domGen.main = domGen('main');
+domGen.map = domGen('map');
+domGen.mark = domGen('mark');
+domGen.math = domGen('math');
+domGen.menu = domGen('menu');
+domGen.menuitem = domGen('menuitem');
+domGen.meta = domGen('meta');
+domGen.meter = domGen('meter');
+domGen.nav = domGen('nav');
+domGen.noscript = domGen('noscript');
+domGen.object = domGen('object');
+domGen.ol = domGen('ol');
+domGen.optgroup = domGen('optgroup');
+domGen.option = domGen('option');
+domGen.output = domGen('output');
+domGen.p = domGen('p');
+domGen.param = domGen('param');
+domGen.picture = domGen('picture');
+domGen.pre = domGen('pre');
+domGen.progress = domGen('progress');
+domGen.q = domGen('q');
+domGen.rb = domGen('rb');
+domGen.rp = domGen('rp');
+domGen.rt = domGen('rt');
+domGen.rtc = domGen('rtc');
+domGen.ruby = domGen('ruby');
+domGen.s = domGen('s');
+domGen.samp = domGen('samp');
+domGen.script = domGen('script');
+domGen.section = domGen('section');
+domGen.select = domGen('select');
+domGen.small = domGen('small');
+domGen.source = domGen('source');
+domGen.span = domGen('span');
+domGen.strong = domGen('strong');
+domGen.style = domGen('style');
+domGen.sub = domGen('sub');
+domGen.summary = domGen('summary');
+domGen.sup = domGen('sup');
+domGen.svg = domGen('svg');
+domGen.table = domGen('table');
+domGen.tbody = domGen('tbody');
+domGen.td = domGen('td');
+domGen.template = domGen('template');
+domGen.textarea = domGen('textarea');
+domGen.tfoot = domGen('tfoot');
+domGen.th = domGen('th');
+domGen.thead = domGen('thead');
+domGen.time = domGen('time');
+domGen.title = domGen('title');
+domGen.tr = domGen('tr');
+domGen.track = domGen('track');
+domGen.u = domGen('u');
+domGen.ul = domGen('ul');
+domGen.var = domGen('var');
+domGen.video = domGen('video');
+domGen.wbr = domGen('wbr');
 
 },{}]},{},[1]);

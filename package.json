@@ -1,6 +1,6 @@
 {
   "name": "dom-gen",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Utility for dom generation, a jquery plugin",
   "main": "dist.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "dist": "browserify src.js --standalone dom-gen -t babelify > dist.js",
     "plugin": "browserify -t babelify plugin.js > jquery-domgen.js",
     "codecov": "cat coverage/*/lcov.info | codecov",
-    "prepublish": "npm run dist"
+    "prepublish": "npm run dist && npm run plugin"
   },
   "repository": {
     "type": "git",
