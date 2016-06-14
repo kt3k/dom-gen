@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 const tags = require('html-tags')
 
-console.log(`/**
+console.log(`'use strict'
+
+module.exports = domGen
+
+/**
  * Returns a generator of the doms of the given tag name.
  * @param {string} tagName The tag name of the dom to create
  * @return {Function}
  */
-export default function domGen(tagName) {
+function domGen(tagName) {
 
   /**
    * Generates a dom with the given params.
@@ -33,4 +37,4 @@ function seemLikePlainObject(o) {
   return o instanceof Object && Object.getPrototypeOf(o).hasOwnProperty('isPrototypeOf')
 }`)
 
-tags.filter(tag => tag !== 'var').forEach(tag => console.log(`export const ${ tag } = domGen('${ tag }')`))
+tags.forEach(tag => console.log(`domGen.${ tag } = domGen('${ tag }')`))

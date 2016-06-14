@@ -214,11 +214,10 @@ tr()
 track()
 u()
 ul()
+var()
 video()
 wbr()
 ```
-
-This module doesn't support `<var>` tag for now. Please create it like `domGen('var')`.
 
 ## Create your own
 
